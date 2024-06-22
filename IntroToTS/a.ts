@@ -29,3 +29,23 @@ function add( a:number,b:number):number{
     return result
 }
 console.log(add(10,20))
+
+//return True or False if user is 18+
+ function isLegal(age:number):boolean{
+    if(age>= 18){
+        return true
+    }
+    else{
+        return false
+    }
+ }
+
+ console.log("isLegal?:"+isLegal(20))
+
+ function mainFunc (callBackFunc:()=>void){
+    setInterval(callBackFunc,1000)
+ }
+
+ function callBackFunc ():string{
+    return "Madarchod Manus"
+ }
