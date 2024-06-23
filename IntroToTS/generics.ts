@@ -14,3 +14,9 @@ function getFirstElement<T>(arr: T[]) {
 
 const el = getFirstElement(["Madara", "Morax"]);
 console.log(el.toLowerCase())
+
+let sum = (x: number, y: number): number => {
+    return x + y;
+}
+
+sum(10, 20); //returns 30
