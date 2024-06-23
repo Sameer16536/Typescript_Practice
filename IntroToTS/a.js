@@ -1,8 +1,9 @@
-var x = 29;
+"use strict";
+const x = 29;
 console.log(x);
-var y = "Sameer";
+const y = "Sameer";
 console.log(y);
-var z = {
+const z = {
     user: "Sameer",
     age: 20
 };
@@ -18,7 +19,7 @@ function greet(name) {
 console.log(greet("Sameer"));
 //add function:
 function add(a, b) {
-    var result = a + b;
+    const result = a + b;
     return result;
 }
 console.log(add(10, 20));
@@ -32,3 +33,9 @@ function isLegal(age) {
     }
 }
 console.log("isLegal?:" + isLegal(20));
+function mainFunc(callBackFunc) {
+    setInterval(callBackFunc, 1000);
+}
+function callBackFunc() {
+    return "Madarchod Manus";
+}

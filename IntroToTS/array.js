@@ -1,24 +1,21 @@
+"use strict";
+// Fix the maxArray function to handle arrays with negative numbers
 function maxArray(arr) {
-    var max = 0;
-    for (var i = 0; i < arr.length; i++) {
+    let max = arr[0]; // Initialize max to the first element of the array
+    for (let i = 1; i < arr.length; i++) { // Start loop from second element
         if (arr[i] > max) {
             max = arr[i];
         }
     }
     return max;
 }
-console.log(maxArray([1, 2, 3, 4, 78]));
+console.log(maxArray([1, 2, 3, 4, 78])); // Output: 78
+// Fix filteredUsers function to match the corrected User interface
 function filteredUsers(users) {
-    return users.filter(function (x) { return x.age > 18; });
+    return users.filter(user => user.age > 18);
 }
-console.log(filteredUsers([{
-        name: "John",
-        age: 20
-    }, {
-        name: "Jane",
-        age: 17
-    },
-    {
-        name: "Bob",
-        age: 30
-    },]));
+console.log(filteredUsers([
+    { fName: "John", lName: "Doe", age: 20 },
+    { fName: "Jane", lName: "Doe", age: 17 },
+    { fName: "Bob", lName: "Smith", age: 30 }
+])); // Output: [ { fName: 'John', lName: 'Doe', age: 20 }, { fName: 'Bob', lName: 'Smith', age: 30 } ]

@@ -10,7 +10,7 @@ const user = {
     age : 21
 }
 
-function isLegal (user:User):boolean{
+function  isLegal2 (user:User):boolean{
     if(user.age >= 18){
         return true
     }
